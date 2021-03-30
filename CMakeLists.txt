@@ -51,7 +51,7 @@ else()
 endif()
 
 caffe_option(BUILD_SHARED_LIBS "Build shared libraries" ON)
-caffe_option(BUILD_python "Build Python wrapper" ON)
+caffe_option(BUILD_python "Build Python wrapper" OFF)
 set(python_version "3" CACHE STRING "Specify which Python version to use")
 caffe_option(BUILD_matlab "Build Matlab wrapper" OFF IF UNIX OR APPLE)
 caffe_option(BUILD_docs   "Build documentation" ON IF UNIX OR APPLE)
